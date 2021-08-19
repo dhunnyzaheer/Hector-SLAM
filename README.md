@@ -21,6 +21,8 @@ For using Hector SLAM on husky, change line 5 and line 6 in the mapping_default.
 
 > rosrun map_server map_saver -f ~/map
 
+![turtlebot3_hector](https://github.com/dhunnyzaheer/Hector-SLAM/blob/main/images/turtlebot3_hector.png)
+
 ## Husky Robot from Clearpath robotics
 
 Add 2D liDAR 
@@ -33,11 +35,13 @@ Add 2D liDAR
 
 > rosrun rviz rviz
 
-Add robot and map in Rviz with topic /map.
+Add robot and map in Rviz with topic /map. Change fixed frame to odom.
 
 > rosrun teleop_twist_keyboard teleop_twist_keyboard.py cmd_vel:=/husky_velocity_controller/cmd_vel
 
 > rosrun map_server map_saver -f ~/map
+
+![Husky_hector](https://github.com/dhunnyzaheer/Hector-SLAM/blob/main/images/husky_hector.png)
 
 ## Build a map using rosbag
 
@@ -58,5 +62,3 @@ Add robot and map in Rviz with topic /map.
 - To save map
 
 > rosrun map_server map_saver -f ~/map
-
-![Map](https://github.com/dhunnyzaheer/Hector-SLAM/blob/main/images/map.pgm)
