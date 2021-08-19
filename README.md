@@ -52,3 +52,11 @@ Add robot and map in Rviz with topic /map.
 - Play data
 
 > rosbag play Team_Hector_MappingBox_Dagstuhl_Neubau.bag  --clock
+
+![Rviz](https://github.com/dhunnyzaheer/Hector-SLAM/blob/main/images/rviz_hector_rosbag.png)
+
+- To save map
+
+> rosrun map_server map_saver -f ~/map
+
+![Map](https://github.com/dhunnyzaheer/Hector-SLAM/blob/main/images/map.pgm)
