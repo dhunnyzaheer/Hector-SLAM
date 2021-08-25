@@ -4,9 +4,13 @@
 
 For using Hector SLAM on husky, change line 5 and line 6 in the mapping_default.launch
 
->  Change "base_frame" to "base_link"
+```
+Change "base_frame" to "base_link"
+```
 
->  Change "odom_frame" to "odom"
+```
+Change "odom_frame" to "odom"
+```
 
 ## Turtlebot3
 
